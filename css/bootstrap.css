@@ -6129,7 +6129,13 @@ button.close {
 .box .space { height: 30px; }
 /*Конец штукам на главной*/
 
-
+/*Стили для кнопок на странице lesson*/
+.bt {
+  background-image: none;
+  background-color: transparent;
+  border-color: transparent;
+}
+/*Конец Стили для кнопок на странице lesson*/
 
 /*Кусок логотипа на главной*/
 .main-page-logo {
