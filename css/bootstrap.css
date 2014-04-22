@@ -6217,3 +6217,10 @@ float: left;
 }
 
 /*КОНЕЦ Настроек для google maps в футере*/
+
+/*Голубая полоска в меню*/
+
+.navbar-nav > li > a:hover {
+  box-shadow: inset 0px 5px #62C2E4;
+}
+/*Конец полоски*/
