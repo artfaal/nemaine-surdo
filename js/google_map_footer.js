@@ -1,27 +1,86 @@
 var map;
 var MY_MAPTYPE_ID = 'custom_style';
 var addr = new google.maps.LatLng(55.657991, 37.476006);
+// А в этой переменной данные по адресу. Ну то что в окошке.
 var addr_info = '<i class="fa fa-map-marker"></i>  <b>Просп. Вернадского, 88</b><br><i class="fa fa-phone"></i> Телефон: (499) 792-00-54';
 function initialize() {
-
-  var featureOpts = [
+    // Большая часть что ниже, это как раз настройки дизайна.
+    // Что бы что-то проверить - расскоментируешь cmd+/ и смотришь, чего делает.
+    // На это же сочетание клавиш закомментировать обратно. =)
+    var featureOpts = [
     {
       stylers: [
+        // Классный эффект. Типа накладывает градиент на всю карту.
+        // { hue: '#890000' },
+        // { gamma: 1 },
+        // { weight: 1 },
+        // Эффект унылости =)
         { saturation: -80 },
       ]
     },
     {
       elementType: 'labels',
       stylers: [
-        { visibility: 'on' }
+        { visibility: 'on' } // Стиль карты. Показывает и скрывает названия цлиц и прочего.
       ]
     },
+    // Цвет воды
+    // {
+    //   featureType: 'water',
+    //   stylers: [
+    //     { color: '#cbced0' }
+    //   ]
+    // },
+
+    // Цвет стандартный
+    // {
+    //   featureType: 'landscape.natural',
+    //   stylers: [
+    //     { color: '#e6e6e2' }
+    //   ]
+    // },
+
+    // Цвет типа дорог наверное
+    // {
+    //   featureType: 'landscape.man_made',
+    //   stylers: [
+    //     { color: '#eaeae9' }
+    //   ]
+    // },
+
+    // Цвет парков
+    // {
+    //   featureType: 'poi.park',
+    //   stylers: [
+    //     { color: '#d1d3ce' }
+    //   ]
+    // },
+
+    // Цвет дорог
+    //     {
+    //   featureType: 'road.highway',
+    //   stylers: [
+    //     { color: '#b7b7ad' }
+    //   ]
+    // },
+
+    // Цвет каких-то других дорог.. =)
+    //     {
+    //   featureType: 'road.arterial',
+    //   stylers: [
+    //     { color: '#dedfd7' }
+    //   ]
+    // },
+
   ];
 
   var mapOptions = {
+    // Степерь приближения.
     zoom: 15,
     center: addr,
+    // Возможность скроллить карту колесиком
     scrollwheel: false,
+    // Убирает или добавляет базовые кнопки гугла.
     disableDefaultUI: true,
     mapTypeControlOptions: {
       mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
