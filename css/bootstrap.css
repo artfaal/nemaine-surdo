@@ -6115,7 +6115,7 @@ button.close {
 /*Добавили штуки на главную*/
 @import "http://fonts.googleapis.com/css?family=Roboto:400,500";
 .box > .icon { text-align: center; position: relative; }
-.box > .icon > .image { position: relative; z-index: 2; margin: auto; width: 88px; height: 88px; border: 8px solid white; line-height: 88px; border-radius: 50%; background: #c4e17f; vertical-align: middle; }
+.box > .icon > .image { position: relative; z-index: 2; margin: auto; width: 88px; height: 88px; border: 8px solid white; line-height: 88px; border-radius: 50%; background: #669ae1; vertical-align: middle; }
 .box > .icon:hover > .image { background: #62c2e4; }
 .box > .icon > .image > i { font-size: 36px !important; color: #fff !important; }
 .box > .icon:hover > .image > i { color: white !important; }
@@ -6125,7 +6125,7 @@ button.close {
 .box > .icon > .info > p { font-family: "Roboto",sans-serif !important; font-size: 13px; color: #666; line-height: 1.5em; margin: 20px;}
 .box > .icon:hover > .info > h3.title, .box > .icon:hover > .info > p, .box > .icon:hover > .info > .more > a { color: #222; }
 .box > .icon > .info > .more a { font-family: "Roboto",sans-serif !important; font-size: 12px; color: #222; line-height: 12px; text-transform: uppercase; text-decoration: none; }
-.box > .icon:hover > .info > .more > a { color: #fff; padding: 6px 8px; background-color: #c4e17f; }
+.box > .icon:hover > .info > .more > a { color: #fff; padding: 6px 8px; background-color: #669ae1; }
 .box .space { height: 30px; }
 /*Конец штукам на главной*/
 
@@ -6202,7 +6202,7 @@ float: left;
   margin-top:50px;
   padding-top:5px;
   padding-bottom:20px;
-  background-color:#62C2E4;
+  background-color:#669ae1;
 }
 
 #footer a {
@@ -6221,6 +6221,6 @@ float: left;
 /*Голубая полоска в меню*/
 
 .navbar-nav > li > a:hover {
-  box-shadow: inset 0px 5px #62C2E4;
+  box-shadow: inset 0px 5px #669ae1;
 }
 /*Конец полоски*/

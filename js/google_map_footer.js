@@ -25,12 +25,12 @@ function initialize() {
       ]
     },
     // Цвет воды
-    {
-      featureType: 'water',
-      stylers: [
-        { color: '#62c2e4' }
-      ]
-    },
+    // {
+    //   featureType: 'water',
+    //   stylers: [
+    //     { color: '#62c2e4' }
+    //   ]
+    // },
 
     // Цвет стандартный
     // {
@@ -49,12 +49,12 @@ function initialize() {
     // },
 
     // Цвет парков
-    {
-      featureType: 'poi.park',
-      stylers: [
-        { color: '#c4e17f' }
-      ]
-    },
+    // {
+    //   featureType: 'poi.park',
+    //   stylers: [
+    //     { color: '#c4e17f' }
+    //   ]
+    // },
 
     // Цвет дорог
     //     {
