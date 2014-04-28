@@ -1,5 +1,6 @@
 var map;
 var MY_MAPTYPE_ID = 'custom_style';
+// Координаты здания по умолчанию: 55.657991, 37.476006
 var addr = new google.maps.LatLng(55.658591, 37.476006);
 var mark_pos = new google.maps.LatLng(55.658441, 37.474506);
 // А в этой переменной данные по адресу. Ну то что в окошке.
