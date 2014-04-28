@@ -105,8 +105,15 @@ function initialize() {
   var beachMarker = new google.maps.Marker({
       position: mark_pos,
       map: map,
-      icon: image
+      icon: image,
+      // Куда ведет клик по маркеру
+      url: "contact.html"
   });
+
+  // Клик по маркеру
+  google.maps.event.addListener(beachMarker, 'click', function() {
+        window.location.href = beachMarker.url;
+    });
 
   var styledMapOptions = {
     name: 'Custom Style'
