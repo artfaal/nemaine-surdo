@@ -82,6 +82,7 @@ function initialize() {
     center: addr,
     // Возможность скроллить карту колесиком
     scrollwheel: false,
+    disableDoubleClickZoom: true,
     // Убирает или добавляет базовые кнопки гугла.
     disableDefaultUI: true,
     mapTypeControlOptions: {
