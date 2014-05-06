@@ -3841,7 +3841,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand {
   float: left;
   height: 50px;
-  padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
 }
@@ -5446,10 +5445,10 @@ button.close {
 .tooltip-inner {
   max-width: 200px;
   padding: 3px 8px;
-  color: #fff;
+  color: #333;
   text-align: center;
   text-decoration: none;
-  background-color: #000;
+  background-color: #f8f8f8;
   border-radius: 4px;
 }
 .tooltip-arrow {
@@ -5490,7 +5489,7 @@ button.close {
   right: 0;
   margin-top: -5px;
   border-width: 5px 0 5px 5px;
-  border-left-color: #000;
+  border-left-color: #eee;
 }
 .tooltip.bottom .tooltip-arrow {
   top: 0;
@@ -6193,16 +6192,19 @@ float: left;
 }*/
 
 #footer {
-  height: 60px;
+  height: 65px;
   background-color: #f5f5f5;
   margin-top:50px;
   padding-top:5px;
-  padding-bottom:20px;
-  background-color:#669ae1;
+  background-color:#f8f8f8;
 }
 
 #footer a {
-  color:#efefef;
+  color:#888;
+  text-decoration: none;
+}
+#footer a:hover {
+  color: #333;
 }
 
 #map-canvas {
@@ -6220,3 +6222,43 @@ float: left;
   box-shadow: inset 0px 5px #669ae1;
 }
 /*Конец полоски*/
+
+/*маркер*/
+.m {
+    padding: 0;
+    margin-left: 10px; /* Отступ слева */
+    font-size: 12px;
+    padding: 2px 2px;
+   }
+/*конец маркера*/
+/*выравнивание в футере справа*/
+.r {
+    padding: 0;
+    margin-right: 10px; /* Отступ справа */
+    float: right;
+    padding: 20px 20px;
+    font-size: 12px;
+   }
+/*конец*/
+/*иконки в футере*/
+.ic {
+  font-size: 16px;
+}
+/*конец иконок*/
+/*Вверх страницы вместе с круглой кнопкой*/
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    right:30px;
+    display:none;
+}
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+/*конец вверха и круглой кнопки*/
